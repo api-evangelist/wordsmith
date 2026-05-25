@@ -1,0 +1,187 @@
+aid: wordsmith
+name: Wordsmith
+description: >-
+  Wordsmith is an Edinburgh-based legal AI platform built for in-house legal
+  teams, marketed as a Slack-native legal copilot that lets non-legal staff
+  self-serve compliant answers, templates, and contract reviews directly in
+  the tools they already use. The product line includes the Wordsmith
+  Assistant (a chat surface that answers routine legal questions, summarises
+  documents, and runs contract review against organisation-specific
+  Playbooks), Templates (parameterised DOCX/Markdown document generation
+  with placeholder fields and fallback clause logic), Playbooks (codified
+  review rules used to flag non-standard terms in NDAs, MSAs, DPAs and
+  similar agreements and to propose pre-approved compromise positions), and
+  a growing set of channel integrations centred on Slack, Microsoft Teams,
+  Gmail, Outlook, Microsoft Word, Google Docs/Drive, SharePoint, OneDrive,
+  Notion, Confluence, Dropbox, Salesforce, HubSpot, Attio, Ironclad, Juro,
+  Asana, Monday.com, Jira, Linear, Granola, Google Sheets, and Excel, plus
+  programmatic reach via an MCP server, Zapier, and n8n. Wordsmith exposes
+  a public REST API documented at wordsmithai.mintlify.app with Bearer-token
+  authentication and resources for Assistants (ask a question with optional
+  file attachments, poll question status, list assistants available to the
+  account), Files (presigned upload URLs for documents), Playbooks (list
+  accessible review playbooks), Templates (list accessible templates), User
+  (get-me for the authenticated user and organisation), plus signed
+  Webhooks for asynchronous notifications. The company was founded in
+  October 2023 by Ross McNairn (CEO, formerly Head of Product at
+  Skyscanner and CPTO at TravelPerk), Robbie Falkenthal (COO), and
+  Volodymyr Giginyak (CTO), is headquartered in Edinburgh with offices in
+  London and New York, raised a $25M Series A from Index Ventures in
+  June 2025 at a reported $100M valuation, and counts Trustpilot,
+  Skyscanner, AutoTrader, Deliveroo, BT, Trip.com, Coursera, Canva,
+  The Financial Times, Remote.com, Multiverse, and Docplanner among its
+  customers. Pricing is published as an Individual plan at $450 per user
+  per month and a custom Enterprise plan, with a 30-minute book-a-demo
+  flow as the primary onboarding path. WORDSMITH is a registered trade
+  mark of Wordsmith Law LLP and is used under licence by Wordsmith AI.
+type: Index
+position: Provider
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Legal
+  - Legal Tech
+  - Legal AI
+  - In-House Legal
+  - General Counsel
+  - Contract Review
+  - Contract Lifecycle Management
+  - Document Generation
+  - Playbooks
+  - Templates
+  - AI Assistants
+  - AI Agents
+  - Agentic AI
+  - Slack
+  - Microsoft Teams
+  - Compliance
+  - Governance
+  - Risk
+  - Legal Engineering
+  - MCP
+url: https://raw.githubusercontent.com/api-evangelist/wordsmith/refs/heads/main/apis.yml
+created: '2026-05-24'
+modified: '2026-05-24'
+specificationVersion: '0.20'
+apis:
+  - aid: wordsmith:platform-api
+    name: Wordsmith Platform API
+    description: >-
+      Public REST API for the Wordsmith legal AI platform. Lets developers
+      ask questions of Wordsmith Assistants with optional file attachments,
+      poll question status, list available assistants, generate presigned
+      file upload URLs, list Playbooks and Templates accessible to the
+      caller, retrieve information about the authenticated user and their
+      organisation, and receive signed Webhook notifications when
+      long-running operations complete. Uses Bearer-token authentication
+      with API keys of the form `sk-ws-api1-...` and is served from
+      `https://api.wordsmith.ai/api/v1/`.
+    type: REST
+    tags:
+      - Legal AI
+      - Assistants
+      - Playbooks
+      - Templates
+      - Files
+      - Webhooks
+    humanURL: https://wordsmithai.mintlify.app/
+    baseURL: https://api.wordsmith.ai/api/v1
+    properties:
+      - type: Documentation
+        url: https://wordsmithai.mintlify.app/
+      - type: GettingStarted
+        url: https://wordsmithai.mintlify.app/quickstart
+      - type: Authentication
+        url: https://wordsmithai.mintlify.app/authentication
+      - type: Introduction
+        url: https://wordsmithai.mintlify.app/introduction
+      - type: Errors
+        url: https://wordsmithai.mintlify.app/errors
+      - type: Webhooks
+        url: https://wordsmithai.mintlify.app/webhooks
+      - type: APIReference
+        url: https://wordsmithai.mintlify.app/api-reference/user/get-me
+      - type: LLMs
+        url: https://wordsmithai.mintlify.app/llms.txt
+  - aid: wordsmith:mcp-server
+    name: Wordsmith MCP Server
+    description: >-
+      Model Context Protocol server that exposes Wordsmith Assistants,
+      Playbooks, and Templates to MCP-aware clients (Claude, agent
+      frameworks, IDEs) so legal context can be pulled into AI workflows
+      without bespoke integration code. Marketed as the connective tissue
+      between Wordsmith and the wider AI ecosystem.
+    type: MCP
+    tags:
+      - MCP
+      - Model Context Protocol
+      - AI Agents
+      - Legal AI
+    humanURL: https://www.wordsmith.ai/integrations/mcp
+    properties:
+      - type: Documentation
+        url: https://www.wordsmith.ai/integrations/mcp
+common:
+  - type: Website
+    url: https://www.wordsmith.ai
+  - type: Application
+    url: https://app.wordsmith.ai/
+  - type: Documentation
+    url: https://wordsmithai.mintlify.app/
+  - type: APIReference
+    url: https://wordsmithai.mintlify.app/api-reference/user/get-me
+  - type: Authentication
+    url: https://wordsmithai.mintlify.app/authentication
+  - type: Quickstart
+    url: https://wordsmithai.mintlify.app/quickstart
+  - type: Webhooks
+    url: https://wordsmithai.mintlify.app/webhooks
+  - type: Errors
+    url: https://wordsmithai.mintlify.app/errors
+  - type: Pricing
+    url: https://www.wordsmith.ai/pricing
+  - type: PricingAU
+    url: https://www.wordsmith.ai/au/pricing
+  - type: ROI
+    url: https://www.wordsmith.ai/roi
+  - type: Customers
+    url: https://www.wordsmith.ai/customers
+  - type: Company
+    url: https://www.wordsmith.ai/company
+  - type: Careers
+    url: https://www.wordsmith.ai/careers
+  - type: Articles
+    url: https://www.wordsmith.ai/articles
+  - type: Comparisons
+    url: https://www.wordsmith.ai/vs
+  - type: BookDemo
+    url: https://www.wordsmith.ai/book-demo
+  - type: Academy
+    url: https://academy.wordsmith.ai/
+  - type: Security
+    url: https://www.wordsmith.ai/security
+  - type: TrustCenter
+    url: https://app.vanta.com/wordsmith.ai/trust/ze3ctf4wjcl4713io5yps
+  - type: Status
+    url: https://status.wordsmith.ai/
+  - type: PrivacyPolicy
+    url: https://www.wordsmith.ai/privacy-policy
+  - type: TermsOfService
+    url: https://www.wordsmith.ai/terms-of-service
+  - type: ModernSlavery
+    url: https://www.wordsmith.ai/modern-slavery
+  - type: DiversityAndInclusion
+    url: https://www.wordsmith.ai/diversity-and-inclusion
+  - type: Integrations
+    url: https://www.wordsmith.ai/integrations
+  - type: SlackIntegration
+    url: https://www.wordsmith.ai/integrations/slack
+  - type: MCPIntegration
+    url: https://www.wordsmith.ai/integrations/mcp
+  - type: GitHub
+    url: https://github.com/wordsmith-ai
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/wordsmithai
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
