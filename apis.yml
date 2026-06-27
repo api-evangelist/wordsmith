@@ -95,7 +95,7 @@ apis:
         url: https://wordsmithai.mintlify.app/authentication
       - type: Introduction
         url: https://wordsmithai.mintlify.app/introduction
-      - type: Errors
+      - type: ErrorCodes
         url: https://wordsmithai.mintlify.app/errors
       - type: Webhooks
         url: https://wordsmithai.mintlify.app/webhooks
@@ -132,11 +132,11 @@ common:
     url: https://wordsmithai.mintlify.app/api-reference/user/get-me
   - type: Authentication
     url: https://wordsmithai.mintlify.app/authentication
-  - type: Quickstart
+  - type: GettingStarted
     url: https://wordsmithai.mintlify.app/quickstart
   - type: Webhooks
     url: https://wordsmithai.mintlify.app/webhooks
-  - type: Errors
+  - type: ErrorCodes
     url: https://wordsmithai.mintlify.app/errors
   - type: Pricing
     url: https://www.wordsmith.ai/pricing
