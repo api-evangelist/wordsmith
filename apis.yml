@@ -122,6 +122,10 @@ apis:
       - type: Documentation
         url: https://www.wordsmith.ai/integrations/mcp
 common:
+  - type: DomainSecurity
+    url: security/wordsmith-domain-security.yml
+  - url: https://www.wordsmith.ai/blog
+    type: Blog
   - type: Website
     url: https://www.wordsmith.ai
   - type: Application
