@@ -93,6 +93,13 @@ apis:
       - Assistants
       - Playbooks
       - Templates
+      - File
+      - Webhook
+    tags_raw:
+      - Legal AI
+      - Assistants
+      - Playbooks
+      - Templates
       - Files
       - Webhooks
     humanURL: https://wordsmithai.mintlify.app/
@@ -124,6 +131,10 @@ apis:
       between Wordsmith and the wider AI ecosystem.
     type: MCP
     tags:
+      - MCP
+      - AI Agents
+      - Legal AI
+    tags_raw:
       - MCP
       - Model Context Protocol
       - AI Agents
