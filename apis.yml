@@ -35,6 +35,17 @@ description: >-
   flow as the primary onboarding path. WORDSMITH is a registered trade
   mark of Wordsmith Law LLP and is used under licence by Wordsmith AI.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
