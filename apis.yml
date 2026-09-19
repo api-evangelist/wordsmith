@@ -71,6 +71,27 @@ tags:
   - Document Generation
   - Playbooks
   - Templates
+  - AI Assistant
+  - AI Agents
+  - Agentic AI
+  - Slack
+  - Microsoft Teams
+  - Compliance
+  - Governance
+  - Risk
+  - Legal Engineering
+  - MCP
+tags_raw:
+  - Legal
+  - Legal Tech
+  - Legal AI
+  - In-House Legal
+  - General Counsel
+  - Contract Review
+  - Contract Lifecycle Management
+  - Document Generation
+  - Playbooks
+  - Templates
   - AI Assistants
   - AI Agents
   - Agentic AI
@@ -101,7 +122,7 @@ apis:
     type: REST
     tags:
       - Legal AI
-      - Assistants
+      - Assistant
       - Playbooks
       - Templates
       - File
