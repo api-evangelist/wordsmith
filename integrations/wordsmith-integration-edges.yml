@@ -6,6 +6,12 @@ checked:
 - microsoft-teams/integrations/microsoft-teams-integration-edges.yml
 - okta/integrations/okta-integration-edges.yml
 - slack/integrations/slack-integration-edges.yml
+- https://a16z.com/portfolio/
+- https://www.battery.com/company/
+- https://www.battery.com/wp-admin/admin-ajax.php
+- https://www.indexventures.com/companies/
+- https://www.sequoiacap.com/our-companies/
+- https://www.sequoiacap.com/sitemap.xml
 marketplace_apps: []
 edges:
 - partner_name: Microsoft Azure Marketplace
@@ -108,5 +114,32 @@ edges:
   detected: '2026-10-18'
   detected_by: mirror-platform-listings.py
   category: Slack app
+- partner_name: Index Ventures
+  partner: index-ventures
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.indexventures.com/companies/wordsmithai/
+  category: vc portfolio participation
+  contract_reference:
+    register: Index Ventures companies (indexventures.com/companies/)
+    standard: null
+    spec_file: null
+    role: vc-portfolio-company
+    registered_name: Wordsmith AI
+    register_id: https://www.indexventures.com/companies/wordsmithai/
+    register_country: europe
+    register_website: https://www.wordsmith.ai/
+    matched_domain: wordsmith.ai
+    matched_by: domain
+    signal_note: 'participation only: the venture firm''s own published portfolio lists the company (investment);
+      an ownership and participation record, not conformance or certification'
+    detected_by: sweep-vc-portfolios.py
+    detected: '2026-10-21'
+    sector: aiml, business-applications
+  detected_by: sweep-vc-portfolios.py
+  first_seen: '2026-10-21'
 source:
 - okta/integrations/okta-integration-edges.yml
