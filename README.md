@@ -1,4 +1,4 @@
-# wordsmith
+# Wordsmith
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,4 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Wordsmith — Edinburgh-based legal AI platform for in-house legal teams. Slack-native legal copilot offering AI assistants, codified review Playbooks, document Templates, an MCP server, and a public REST API at `api.wordsmith.ai`. Customers include Trustpilot, Skyscanner, AutoTrader, Deliveroo, BT, Trip.com, Coursera, Canva, and The Financial Times. Founded 2023; $25M Series A from Index Ventures (June 2025).
+Wordsmith is an Edinburgh-based legal AI platform built for in-house legal teams, marketed as a Slack-native legal copilot that lets non-legal staff self-serve compliant answers, templates, and contract reviews directly in the tools they already use. The product line includes the Wordsmith Assistant (a chat surface that answers routine legal questions, summarises documents, and runs contract review against organisation-specific Playbooks), Templates (parameterised DOCX/Markdown document generation with placeholder fields and fallback clause logic), Playbooks (codified review rules used to flag non-standard terms in NDAs, MSAs, DPAs and similar agreements and to propose pre-approved compromise positions), and a growing set of channel integrations centred on Slack, Microsoft Teams, Gmail, Outlook, Microsoft Word, Google Docs/Drive, SharePoint, OneDrive, Notion, Confluence, Dropbox, Salesforce, HubSpot, Attio, Ironclad, Juro, Asana, Monday.com, Jira, Linear, Granola, Google Sheets, and Excel, plus programmatic reach via an MCP server, Zapier, and n8n. Wordsmith exposes a public REST API documented at wordsmithai.mintlify.app with Bearer-token authentication and resources for Assistants (ask a question with optional file attachments, poll question status, list assistants available to the account), Files (presigned upload URLs for documents), Playbooks (list accessible review playbooks), Templates (list accessible templates), User (get-me for the authenticated user and organisation), plus signed Webhooks for asynchronous notifications. The company was founded in October 2023 by Ross McNairn (CEO, formerly Head of Product at Skyscanner and CPTO at TravelPerk), Robbie Falkenthal (COO), and Volodymyr Giginyak (CTO), is headquartered in Edinburgh with offices in London and New York, raised a $25M Series A from Index Ventures in June 2025 at a reported $100M valuation, and counts Trustpilot, Skyscanner, AutoTrader, Deliveroo, BT, Trip.com, Coursera, Canva, The Financial Times, Remote.com, Multiverse, and Docplanner among its customers. Pricing is published as an Individual plan at $450 per user per month and a custom Enterprise plan, with a 30-minute book-a-demo flow as the primary onboarding path. WORDSMITH is a registered trade mark of Wordsmith Law LLP and is used under licence by Wordsmith AI.
+
+**Areas:** Legal · Legal Tech · Legal AI · In-House Legal · General Counsel · Contract Review · Contract Lifecycle Management · Document Generation · Playbooks · Templates · AI Assistant · AI Agents
+
+## Wordsmith on APIs.io
+
+Everything profiled for Wordsmith is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/wordsmith/](https://apis.io/providers/wordsmith/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Wordsmith Platform API](https://apis.io/apis/wordsmith/platform-api/) — Public REST API for the Wordsmith legal AI platform. Lets developers ask questions of Wordsmith Assistants with optional file attachments, poll question…
+- [Wordsmith MCP Server](https://apis.io/apis/wordsmith/mcp-server/) — Model Context Protocol server that exposes Wordsmith Assistants, Playbooks, and Templates to MCP-aware clients (Claude, agent frameworks, IDEs) so legal…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Wordsmith Domain Security](https://apis.io/security/wordsmith/wordsmith-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.wordsmith.ai)
+- [Documentation](https://wordsmithai.mintlify.app/)
+- [Getting started](https://wordsmithai.mintlify.app/quickstart)
+- [API reference](https://wordsmithai.mintlify.app/api-reference/user/get-me)
+- [Pricing](https://www.wordsmith.ai/pricing)
+- [Blog](https://www.wordsmith.ai/blog)
+- [Security](https://www.wordsmith.ai/security)
+- [Trust centre](https://app.vanta.com/wordsmith.ai/trust/ze3ctf4wjcl4713io5yps)
+- [Terms of service](https://www.wordsmith.ai/terms-of-service)
+- [Privacy policy](https://www.wordsmith.ai/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 15.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 42.9 |
+| Access clarity | 0.0 |
+
+**Agent readiness 9.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | unknown |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — AI & Biometrics
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/wordsmith/](https://apis.io/providers/wordsmith/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Wordsmith: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/wordsmith/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
